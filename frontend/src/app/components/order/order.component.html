@@ -1,0 +1,10 @@
+<div class="p-4">
+    <h1 class="text-2xl font-bold mb-4">Pedidos</h1>
+    <div *ngFor="let order of orders" class="bg-gray-100 p-4 rounded mb-4">
+      <p>ID Pedido: {{ order._id }}</p>
+      <p>Quantidade:{{order.quantity}}</p>
+      <p>Preco Total: {{ order.totalPrice }}</p>
+      <p>Status: {{ order.status }}</p>
+    </div>
+  </div>
+  
